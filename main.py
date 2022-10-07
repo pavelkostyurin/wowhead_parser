@@ -296,7 +296,7 @@ if __name__ == '__main__':
     # Calculate not processed ids
     with open('names.csv', 'r') as f:
         processed_ids = f.read().splitlines()
-        
+
         # No duplicates are allowed in resulting file
         assert len(processed_ids) == len(set(processed_ids))
         lines = f.readlines()
